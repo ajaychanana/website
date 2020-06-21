@@ -89,10 +89,10 @@ Each controller for a workload resource uses the PodTemplate inside the workload
 The sample below is a manifest for a simple Job with a `template` that starts one container. The container in that Pod prints a message then pauses.
 
 ```yaml
-apiVersion: batch/v1
-kind: Job
+apiVersion: v1
+kind: Pod
 metadata:
-  name: hello
+  name: myapp-pod
 spec:
   template:
     # This is the pod template
